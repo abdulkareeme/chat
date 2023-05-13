@@ -1,0 +1,10 @@
+<form action="" method='POST'>
+    {% csrf_token %}
+    {{form}}
+    <input type='submit'>
+</form>
+
+{%if user.is_authenticated%}
+{{user.username}}
+{%endif%}
+{{user.username}} hello
